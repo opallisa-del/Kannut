@@ -16,6 +16,25 @@ window.addEventListener('scroll', () => {
     }
 }, { passive: true });
 
+// ── Mobile Menu Toggle ──────────────────────────
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileNavToggle) {
+    mobileNavToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        const isOpen = document.body.classList.contains('nav-open');
+        mobileNavToggle.setAttribute('aria-expanded', isOpen);
+    });
+}
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    });
+});
+
 
 // ── Smooth scroll for anchor links ────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
