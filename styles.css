@@ -1628,3 +1628,44 @@ footer {
   opacity: 0.8;
 }
 
+
+
+/* Details Accordion inside ds-card */
+.ds-card-details {
+  margin-top: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.ds-card-details summary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+.ds-card-details summary::-webkit-details-marker {
+  display: none;
+}
+.ds-card-details summary::after {
+  content: '+';
+  font-size: 1.1rem;
+  font-weight: 300;
+  transition: transform 0.3s;
+}
+.ds-card-details[open] summary::after {
+  transform: rotate(45deg);
+}
+.ds-card-details summary:hover {
+  color: var(--text-primary);
+}
+.ds-card-details p {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-tertiary);
+}
