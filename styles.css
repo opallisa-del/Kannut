@@ -25,7 +25,7 @@
   --accent-amber: #f59e0b;
   --accent-rose: #f43f5e;
 
-  --gradient-main: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+  --gradient-main: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #a855f7 100%);
   --gradient-hero: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #0ea5e9 100%);
   --gradient-glow: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99, 102, 241, 0.12), transparent);
 
