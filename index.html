@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <!-- Favicon emoji fallback -->
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236366f1'/><text y='.9em' font-size='60' x='20' fill='white'>₩</text></svg>" />
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%2338bdf8;stop-opacity:1' /><stop offset='100%25' style='stop-color:%23c084fc;stop-opacity:1' /></linearGradient></defs><rect width='100' height='100' rx='25' fill='url(%23g)'/><g fill='none' stroke='white' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'><path d='M35 28v44 M35 50c6 0 14-4 22-18 M60 52c-4 0-10-2-15-13 M47 28h11v11'/></g></svg>" />
 </head>
 
 <body class="ds-applied">
@@ -25,8 +25,9 @@
     <nav id="navbar">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
-                <div class="nav-logo-icon"><svg class="ds-svg" viewBox="0 0 24 24">
-                        <polygon points="12 2 2 7 12 22 22 7 12 2"></polygon>
+                <div class="nav-logo-icon"><svg class="ds-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 6v12 M8 12c3 0 6-2 9-7 M18 13c-2 0-5-1-7-5 M13 5h4v4" />
                     </svg></div>
                 Kannut
             </a>
@@ -859,6 +860,107 @@
         </div>
     </section>
 
+    <!-- ════════════════════════════════════════
+     SPOTLIGHT 4: MI PROGRESO
+  ════════════════════════════════════════ -->
+    <section id="progreso-spotlight" class="section spotlight" style="background:rgba(245,158,11,0.02)">
+        <div class="bg-glow glow-amber"
+            style="width:500px;height:500px;top:50%;right:-100px;transform:translateY(-50%);opacity:0.3;"></div>
+        <div class="container">
+            <div class="spotlight-grid">
+
+                <!-- Text -->
+                <div class="spotlight-text reveal">
+                    <div class="section-tag"
+                        style="color:#f59e0b; border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.1);">
+                        <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
+                            <path d="M12 14v4"></path>
+                            <path d="M12 2A10 10 0 0 1 22 12A10 10 0 0 1 2 12A10 10 0 0 1 12 2Z"></path>
+                            <path d="M12 14L15.5 10.5"></path>
+                        </svg> Mi Progreso
+                    </div>
+                    <h2 class="display-md">Tus metas, cumplidas.<br /><span
+                            style="background:linear-gradient(90deg,#f59e0b,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Sin
+                            excusas.</span></h2>
+                    <p class="body-md" style="margin-bottom:32px;">Control de ahorro anual. KPIs de Crecimiento del Año,
+                        Media Mensual y Desviación respecto a tu objetivo configurado.</p>
+
+                    <div class="spotlight-bullets">
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
+                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
+                                    <path d="M3 3v18h18"></path>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Control de Ahorro YTD</strong>
+                                <span>Compara tu ahorro acumulado del año actual (Year-To-Date) con la meta ambiciosa
+                                    que te fijaste.</span>
+                            </div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
+                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Media Mensual y Desviaciones</strong>
+                                <span>Observa la media mensual de crecimiento y corrige desviaciones a tiempo para
+                                    asegurar tu éxito a final de año.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI Panel: Progress KPI -->
+                <div class="ui-panel reveal reveal-delay-2" style="border-top:4px solid #f59e0b;">
+                    <div
+                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
+                        OBJETIVO DE AHORRO 2026</div>
+
+                    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:12px;">
+                        <div>
+                            <div
+                                style="font-size:2rem; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em;">
+                                €9.000</div>
+                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Ahorro YTD Acumulado</div>
+                        </div>
+                        <div style="text-align:right;">
+                            <div style="font-size:1.1rem; font-weight:600; color:var(--text-secondary);">€12.000</div>
+                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Meta Anual</div>
+                        </div>
+                    </div>
+
+                    <div class="ret-goal-bar" style="height:12px; margin-bottom:24px;">
+                        <div class="ret-goal-fill"
+                            style="width:75%; background:linear-gradient(90deg,#f59e0b,#fbbf24);"></div>
+                    </div>
+
+                    <div class="ret-items">
+                        <div class="ret-item"
+                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
+                            <div class="ret-item-label" style="font-size:0.75rem;">Progreso Total</div>
+                            <div class="ret-item-val" style="color:#f59e0b; font-size:1.2rem; font-weight:700;">75.0%
+                            </div>
+                        </div>
+                        <div class="ret-item"
+                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
+                            <div class="ret-item-label" style="font-size:0.75rem;">Media Mensual</div>
+                            <div class="ret-item-val"
+                                style="color:var(--text-primary); font-size:1.2rem; font-weight:700;">€1.125</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- ════════════════════════════════════════
      STATS
@@ -971,106 +1073,7 @@
 
 
 
-    <!-- ════════════════════════════════════════
-     SPOTLIGHT 4: MI PROGRESO
-  ════════════════════════════════════════ -->
-    <section id="progreso-spotlight" class="section spotlight" style="background:rgba(245,158,11,0.02)">
-        <div class="bg-glow glow-amber"
-            style="width:500px;height:500px;top:50%;right:-100px;transform:translateY(-50%);opacity:0.3;"></div>
-        <div class="container">
-            <div class="spotlight-grid">
 
-                <!-- Text -->
-                <div class="spotlight-text reveal">
-                    <div class="section-tag"
-                        style="color:#f59e0b; border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.1);">
-                        <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
-                            <path d="M12 14v4"></path>
-                            <path d="M12 2A10 10 0 0 1 22 12A10 10 0 0 1 2 12A10 10 0 0 1 12 2Z"></path>
-                            <path d="M12 14L15.5 10.5"></path>
-                        </svg> Mi Progreso
-                    </div>
-                    <h2 class="display-md">Tus metas, cumplidas.<br /><span
-                            style="background:linear-gradient(90deg,#f59e0b,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Sin
-                            excusas.</span></h2>
-                    <p class="body-md" style="margin-bottom:32px;">Control de ahorro anual. KPIs de Crecimiento del Año,
-                        Media Mensual y Desviación respecto a tu objetivo configurado.</p>
-
-                    <div class="spotlight-bullets">
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
-                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
-                                    <path d="M3 3v18h18"></path>
-                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <strong>Control de Ahorro YTD</strong>
-                                <span>Compara tu ahorro acumulado del año actual (Year-To-Date) con la meta ambiciosa
-                                    que te fijaste.</span>
-                            </div>
-                        </div>
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
-                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 6 12 12 16 14"></polyline>
-                                </svg>
-                            </div>
-                            <div>
-                                <strong>Media Mensual y Desviaciones</strong>
-                                <span>Observa la media mensual de crecimiento y corrige desviaciones a tiempo para
-                                    asegurar tu éxito a final de año.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UI Panel: Progress KPI -->
-                <div class="ui-panel reveal reveal-delay-2" style="border-top:4px solid #f59e0b;">
-                    <div
-                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
-                        OBJETIVO DE AHORRO 2026</div>
-
-                    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:12px;">
-                        <div>
-                            <div
-                                style="font-size:2rem; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em;">
-                                €9.000</div>
-                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Ahorro YTD Acumulado</div>
-                        </div>
-                        <div style="text-align:right;">
-                            <div style="font-size:1.1rem; font-weight:600; color:var(--text-secondary);">€12.000</div>
-                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Meta Anual</div>
-                        </div>
-                    </div>
-
-                    <div class="ret-goal-bar" style="height:12px; margin-bottom:24px;">
-                        <div class="ret-goal-fill"
-                            style="width:75%; background:linear-gradient(90deg,#f59e0b,#fbbf24);"></div>
-                    </div>
-
-                    <div class="ret-items">
-                        <div class="ret-item"
-                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
-                            <div class="ret-item-label" style="font-size:0.75rem;">Progreso Total</div>
-                            <div class="ret-item-val" style="color:#f59e0b; font-size:1.2rem; font-weight:700;">75.0%
-                            </div>
-                        </div>
-                        <div class="ret-item"
-                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
-                            <div class="ret-item-label" style="font-size:0.75rem;">Media Mensual</div>
-                            <div class="ret-item-val"
-                                style="color:var(--text-primary); font-size:1.2rem; font-weight:700;">€1.125</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
     <!-- ════════════════════════════════════════
      FOOTER
   ════════════════════════════════════════ -->
@@ -1079,8 +1082,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="nav-logo" style="font-size:1.15rem;">
-                        <div class="nav-logo-icon"><svg class="ds-svg" viewBox="0 0 24 24">
-                                <polygon points="12 2 2 7 12 22 22 7 12 2"></polygon>
+                        <div class="nav-logo-icon"><svg class="ds-svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 6v12 M7 12c3 0 6-2 10-7 M7 12c3 0 5 3 7 7 M14 5h3v3" />
                             </svg></div>
                         Kannut
                     </a>
