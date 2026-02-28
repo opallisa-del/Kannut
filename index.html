@@ -63,11 +63,11 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="hero-badge-dot"></span>
-                    Conoce tu cartera y define tus objetivos: la app que enseña para que tú decidas.
+                    Conoce tu dinero y define tus objetivos: la app que te enseña a invertir de forma sencilla.
                 </div>
 
                 <h1 class="hero-title">
-                    Tu patrimonio,<br />
+                    Tu dinero,<br />
                     <span class="gradient-text">bajo control.</span>
                 </h1>
 
@@ -151,7 +151,7 @@
                                 <!-- KPI Row -->
                                 <div class="m-kpi-row">
                                     <div class="m-kpi">
-                                        <div class="m-kpi-label">PATRIMONIO TOTAL</div>
+                                        <div class="m-kpi-label">DINERO TOTAL</div>
                                         <div class="m-kpi-value indigo">€285.400</div>
                                         <div class="m-kpi-trend">↑ +12.4% Total · YTD +8.2%</div>
                                     </div>
@@ -169,7 +169,7 @@
 
                                 <!-- Chart -->
                                 <div class="m-chart-area">
-                                    <div class="m-chart-label">EVOLUCIÓN DEL PATRIMONIO</div>
+                                    <div class="m-chart-label">EVOLUCIÓN DE TU DINERO</div>
                                     <svg class="m-chart-svg" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg"
                                         preserveAspectRatio="none">
                                         <defs>
@@ -245,7 +245,7 @@
                 <div class="hero-stats reveal reveal-delay-1">
                     <div class="hero-stat">
                         <div class="hero-stat-value" data-target="360" data-suffix="°">0°</div>
-                        <div class="hero-stat-label">Vista de patrimonio avanzada</div>
+                        <div class="hero-stat-label">Vista clara de tu dinero</div>
                     </div>
                     <div class="hero-stat">
                         <div class="hero-stat-value" data-target="6" data-suffix="">0</div>
@@ -267,112 +267,442 @@
 
 
     <!-- ════════════════════════════════════════
-     FEATURES GRID
+     SPOTLIGHT 1.5: MI CARTERA
   ════════════════════════════════════════ -->
-    <section id="features" class="section">
+    <section id="cartera-spotlight" class="section spotlight" style="background:rgba(16,185,129,0.02)">
+        <div class="bg-glow glow-emerald"
+            style="width:600px;height:600px;top:50%;left:-100px;transform:translateY(-50%);opacity:0.3;"></div>
         <div class="container">
-            <div class="features-intro reveal">
-                <div class="section-tag">✦ Funcionalidades</div>
-                <h2 class="display-lg">Seis módulos.<br /><span class="gradient-text">Un solo objetivo
-                        financiero.</span></h2>
-                <p class="body-lg" style="margin-top:16px;">Desde el seguimiento diario de rentas pasivas hasta la
-                    planificación de tu jubilación
-                    con LTIP y pensión — Kannut lo cubre todo.</p>
-            </div>
+            <div class="spotlight-grid reverse">
 
+                <!-- UI Panel: Asset Allocation -->
+                <div class="ui-panel reveal reveal-delay-2">
+                    <div
+                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
+                        ASSET ALLOCATION</div>
 
-            <div class="ds-feature-grid">
-                <div id="vision360" class="ds-card ds-card-highlight">
-                    <div class="ds-icon-box" style="background:#5559E8;">
-                        <svg class="ds-svg" viewBox="0 0 24 24">
-                            <path d="M18 20V10M12 20V4M6 20v-6"></path>
+                    <div style="display:flex; justify-content:center; margin:20px 0;">
+                        <!-- Mock Donut Chart using SVG -->
+                        <svg viewBox="0 0 100 100" width="160" height="160">
+                            <!-- Background ring -->
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)"
+                                stroke-width="15" />
+                            <!-- Acciones (60%) -->
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#6366f1" stroke-width="15"
+                                stroke-dasharray="150.8 251.2" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+                            <!-- ETFs (20%) -->
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#8b5cf6" stroke-width="15"
+                                stroke-dasharray="50.24 251.2" stroke-dashoffset="-150.8"
+                                transform="rotate(-90 50 50)" />
+                            <!-- Efectivo (10%) -->
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#10b981" stroke-width="15"
+                                stroke-dasharray="25.12 251.2" stroke-dashoffset="-201.04"
+                                transform="rotate(-90 50 50)" />
+                            <!-- Crypto (10%) -->
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#f59e0b" stroke-width="15"
+                                stroke-dasharray="25.12 251.2" stroke-dashoffset="-226.16"
+                                transform="rotate(-90 50 50)" />
                         </svg>
                     </div>
-                    <h3 class="ds-card-title">Mi Visión 360</h3>
-                    <p class="ds-card-desc">Sigue tu progreso financiero, define metas y toma decisiones informadas con
-                        datos claros y objetivos.</p>
-                    <span class="ds-card-tags">PATRIMONIO · YIELD · YTD · RENTAS</span>
+
+                    <div class="ret-items" style="margin-top:24px;">
+                        <div class="ret-item">
+                            <div class="ret-item-label"><span class="ret-item-dot"
+                                    style="background:#6366f1;"></span>Acciones Totales</div>
+                            <div class="ret-item-val" style="color:var(--text-primary);">60.0%</div>
+                        </div>
+                        <div class="ret-item">
+                            <div class="ret-item-label"><span class="ret-item-dot"
+                                    style="background:#8b5cf6;"></span>ETFs (Indexados)</div>
+                            <div class="ret-item-val" style="color:var(--text-primary);">20.0%</div>
+                        </div>
+                        <div class="ret-item">
+                            <div class="ret-item-label"><span class="ret-item-dot"
+                                    style="background:#10b981;"></span>Efectivo & Renta Fija</div>
+                            <div class="ret-item-val" style="color:var(--text-primary);">10.0%</div>
+                        </div>
+                        <div class="ret-item">
+                            <div class="ret-item-label"><span class="ret-item-dot"
+                                    style="background:#f59e0b;"></span>Criptomonedas</div>
+                            <div class="ret-item-val" style="color:var(--text-primary);">10.0%</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="cartera" class="ds-card">
-                    <div class="ds-icon-box" style="background:var(--ds-emerald-500);">
-                        <svg class="ds-svg" viewBox="0 0 24 24">
+                <!-- Text -->
+                <div class="spotlight-text reveal">
+                    <div class="section-tag"><svg class="ds-svg" viewBox="0 0 24 24">
                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                             <line x1="16" y1="2" x2="16" y2="6"></line>
                             <line x1="8" y1="2" x2="8" y2="6"></line>
                             <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
+                        </svg> Mi Cartera</div>
+                    <h2 class="display-md">Tus inversiones,<br />
+<span class="gradient-text">organizadas y claras.</span></h2>
+                    <p class="body-md" style="margin-bottom:32px;">Controla tu cartera y aprende cómo equilibrarla según
+                        tu perfil de riesgo, sin recomendaciones de fondos concretos.</p>
+
+                    <div class="spotlight-bullets">
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);">
+                                <svg class="ds-svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>¿Cómo está repartido tu dinero?</strong>
+<span>Ve en un gráfico muy sencillo cuánto tienes en acciones, fondos, efectivo o criptomonedas para no poner todos los huevos en la misma cesta.</span>
+                            </div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);">
+                                <svg class="ds-svg" viewBox="0 0 24 24">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Lo que más sube y baja</strong>
+<span>Detecta rápidamente qué inversiones te están dando más ganancias y comprende su rendimiento real.</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="ds-card-title">Mi Cartera</h3>
-                    <p class="ds-card-desc">Controla tu cartera y aprende cómo equilibrarla según tu perfil de riesgo,
-                        sin recomendaciones de fondos concretos.</p>
-                    <span class="ds-card-tags">ACCIONES · ETFs · REITs · CRYPTO</span>
                 </div>
 
-                <div id="asesor" class="ds-card">
-                    <div class="ds-icon-box" style="background:var(--ds-violet-500);">
-                        <svg class="ds-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles">
-                            <path
-                                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                            <path d="M5 3v4" />
-                            <path d="M19 17v4" />
-                            <path d="M3 5h4" />
-                            <path d="M17 19h4" />
-                        </svg>
-                    </div>
-                    <h3 class="ds-card-title">Mi Asesor Personal</h3>
-                    <p class="ds-card-desc">Educación financiera práctica para que tomes decisiones con autonomía, lejos
-                        de bancos y comisiones innecesarias.</p>
-                    <span class="ds-card-tags">GEMINI · STREAMING · 24/7</span>
-                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ════════════════════════════════════════
+     SPOTLIGHT 4: MI PROGRESO
+  ════════════════════════════════════════ -->
+    <section id="progreso-spotlight" class="section spotlight" style="background:rgba(245,158,11,0.02)">
+        <div class="bg-glow glow-amber"
+            style="width:500px;height:500px;top:50%;right:-100px;transform:translateY(-50%);opacity:0.3;"></div>
+        <div class="container">
+            <div class="spotlight-grid">
 
-                <div id="futuro" class="ds-card">
-                    <div class="ds-icon-box" style="background:var(--ds-sky-500);">
-                        <svg class="ds-svg" viewBox="0 0 24 24">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="ds-card-title">Mi Futuro</h3>
-                    <p class="ds-card-desc">Planifica tu jubilación y tu salud financiera a largo plazo, de manera
-                        independiente y educativa.</p>
-                    <span class="ds-card-tags">PROYECCIONES · LTIP · PENSIÓN</span>
-                </div>
-
-                <div id="progreso" class="ds-card">
-                    <div class="ds-icon-box" style="background:var(--ds-amber-500);">
-                        <svg class="ds-svg" viewBox="0 0 24 24">
+                <!-- Text -->
+                <div class="spotlight-text reveal">
+                    <div class="section-tag"
+                        style="color:#f59e0b; border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.1);">
+                        <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
                             <path d="M12 14v4"></path>
                             <path d="M12 2A10 10 0 0 1 22 12A10 10 0 0 1 2 12A10 10 0 0 1 12 2Z"></path>
                             <path d="M12 14L15.5 10.5"></path>
-                        </svg>
+                        </svg> Mi Progreso
                     </div>
-                    <h3 class="ds-card-title">Mi Progreso</h3>
-                    <p class="ds-card-desc">Control de ahorro anual. KPIs de Crecimiento del Año, Media Mensual y
-                        Desviación respecto a tu objetivo configurado.</p>
-                    <span class="ds-card-tags">METAS · AHORRO · YTD</span>
+                    <h2 class="display-md">Tus metas, cumplidas.<br /><span
+                            style="background:linear-gradient(90deg,#f59e0b,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Sin
+                            excusas.</span></h2>
+                    <p class="body-md" style="margin-bottom:32px;">Controla tu ahorro anual. Sigue tu ritmo mes a mes y descubre a tiempo si necesitas ajustar algo para cumplir tus objetivos.</p>
+
+                    <div class="spotlight-bullets">
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
+                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
+                                    <path d="M3 3v18h18"></path>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Tu ahorro acumulado del año</strong>
+<span>Compara lo que llevas ahorrado hasta hoy con la gran meta que te pusiste a principio de año.</span>
+                            </div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
+                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Tu ritmo mensual</strong>
+<span>Observa a qué velocidad estás ahorrando en promedio y corrige el rumbo a tiempo para asegurar tu éxito.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="configuracion" class="ds-card">
-                    <div class="ds-icon-box" style="background:var(--ds-rose-500);">
-                        <svg class="ds-svg" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path
-                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
-                            </path>
-                        </svg>
+                <!-- UI Panel: Progress KPI -->
+                <div class="ui-panel reveal reveal-delay-2" style="border-top:4px solid #f59e0b;">
+                    <div
+                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
+                        OBJETIVO DE AHORRO 2026</div>
+
+                    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:12px;">
+                        <div>
+                            <div
+                                style="font-size:2rem; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em;">
+                                €9.000</div>
+                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Ahorro YTD Acumulado</div>
+                        </div>
+                        <div style="text-align:right;">
+                            <div style="font-size:1.1rem; font-weight:600; color:var(--text-secondary);">€12.000</div>
+                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Meta Anual</div>
+                        </div>
                     </div>
-                    <h3 class="ds-card-title">Mi Configuración</h3>
-                    <p class="ds-card-desc">Personaliza tu perfil: año de nacimiento, objetivo de rentas, pensión
-                        pública, LTIP y marginal de IRPF. Todo para cálculos precisos.</p>
-                    <span class="ds-card-tags">PERFIL · FINANZAS · IRPF</span>
+
+                    <div class="ret-goal-bar" style="height:12px; margin-bottom:24px;">
+                        <div class="ret-goal-fill"
+                            style="width:75%; background:linear-gradient(90deg,#f59e0b,#fbbf24);"></div>
+                    </div>
+
+                    <div class="ret-items">
+                        <div class="ret-item"
+                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
+                            <div class="ret-item-label" style="font-size:0.75rem;">Progreso Total</div>
+                            <div class="ret-item-val" style="color:#f59e0b; font-size:1.2rem; font-weight:700;">75.0%
+                            </div>
+                        </div>
+                        <div class="ret-item"
+                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
+                            <div class="ret-item-label" style="font-size:0.75rem;">Media Mensual</div>
+                            <div class="ret-item-val"
+                                style="color:var(--text-primary); font-size:1.2rem; font-weight:700;">€1.125</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+     SPOTLIGHT 2: AI ADVISOR
+  ════════════════════════════════════════ -->
+    <section id="ai-advisor" class="section spotlight" style="background:rgba(139,92,246,0.02);">
+        <div class="bg-glow glow-violet"
+            style="width:600px;height:600px;top:50%;right:-150px;transform:translateY(-50%);opacity:0.4;"></div>
+        <div class="container">
+            <div class="spotlight-grid reverse">
+                <!-- UI Panel: AI Chat -->
+                <div class="ui-panel ai-panel reveal">
+                    <div class="ai-header">
+                        <div class="ai-avatar"><svg class="ds-svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles">
+                                <path
+                                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                                <path d="M5 3v4" />
+                                <path d="M19 17v4" />
+                                <path d="M3 5h4" />
+                                <path d="M17 19h4" />
+                            </svg></div>
+                        <div class="ai-header-text">
+                            <h4>Mi Asesor — Gemini</h4>
+                            <p>Respuestas inteligentes sobre tu dinero</p>
+                        </div>
+                        <span
+                            style="font-size:0.65rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);border-radius:100px;padding:3px 10px;color:#10b981;margin-left:auto;">●
+                            Online</span>
+                    </div>
+
+                    <div class="ai-messages">
+                        <div class="ai-msg assistant">
+                            <div class="ai-bubble">Hola, soy Gemini. Tengo acceso completo a tu cartera y objetivos. ¿En
+                                qué puedo ayudarte hoy?</div>
+                        </div>
+                        <div class="ai-msg user">
+                            <div class="ai-bubble">¿Llegaré a mi meta de jubilación en 2038?</div>
+                        </div>
+                        <div class="ai-msg assistant">
+                            <div class="ai-bubble">
+                                Analizando tu cartera de €285.400 y tu ahorro mensual de €1.000... <strong>Sí, llegarás
+                                    con margen.</strong> Estás al 68% de cobertura. Si mantienes el yield del 5.19%,
+                                incluso podrías alcanzar la meta en 2036.
+                            </div>
+                        </div>
+                        <div class="ai-msg user">
+                            <div class="ai-bubble">¿Qué hago con mi exceso de liquidez?</div>
+                        </div>
+                        <div class="ai-msg assistant">
+                            <div class="ai-bubble">
+                                Según un modelo teórico de diversificación, tendrías un déficit del 8% en <strong>ETFs
+                                    de acumulación</strong>. Podrías considerar reforzar el MSCI World o S&P 500.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="font-size: 0.55rem; color: #6e6e73; padding: 10px 15px; opacity: 0.8; line-height: 1.2;">
+                        * Este análisis se basa en modelos matemáticos y proyecciones teóricas. No constituye
+                        asesoramiento financiero ni recomendaciones personalizadas.
+                    </div>
+
+                    <div class="ai-input-bar">
+                        <span class="ai-input-text">Pregunta a Gemini sobre tu cartera...</span>
+                        <div class="ai-send-btn">↑</div>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="spotlight-text reveal reveal-delay-2">
+                    <div class="section-tag">✦ Mi Asesor</div>
+                    <h2 class="display-md">Tu profesor financiero<br />
+<span class="gradient-text">disponible 24/7.</span></h2>
+                    <p class="body-md" style="margin-bottom:32px;">Educación financiera práctica para que tomes
+                        decisiones con autonomía, lejos de bancos y comisiones innecesarias.</p>
+
+                    <div class="spotlight-bullets">
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(139,92,246,0.15);border-color:rgba(139,92,246,0.2);"><svg
+                                    class="ds-svg" viewBox="0 0 24 24">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path
+                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                    </path>
+                                </svg></div>
+                            <div>
+                                <strong>Conoce toda tu situación</strong>
+<span>El asistente sabe cuánto tienes ahorrado y qué rendimiento te da, explicándotelo de forma sencilla.</span>
+                            </div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(139,92,246,0.15);border-color:rgba(139,92,246,0.2);"><svg
+                                    class="ds-svg" viewBox="0 0 24 24">
+                                    <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                                    <path d="M12 2a10 10 0 0 1 10 10h-10V2z"></path>
+                                </svg></div>
+                            <div>
+                                <strong>Conversaciones naturales y al instante</strong>
+<span>Pregunta cualquier duda sobre dinero o jubilación y obtén una respuesta clara, inmediata y sin jerga.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
+    <!-- ════════════════════════════════════════
+     SPOTLIGHT 3: MI FUTURO
+  ════════════════════════════════════════ -->
+    <section id="simulator" class="section spotlight">
+        <div class="bg-glow glow-emerald"
+            style="width:500px;height:500px;top:50%;left:-100px;transform:translateY(-50%);opacity:0.4;"></div>
+        <div class="container">
+            <div class="spotlight-grid">
+                <!-- Text -->
+                <div class="spotlight-text reveal">
+                    <div class="section-tag"><svg class="ds-svg" viewBox="0 0 24 24">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg> Mi Futuro</div>
+                    <h2 class="display-md">Dibuja tu futuro.<br />
+<span class="gradient-text">Planifica tu libertad.</span></h2>
+                    <p class="body-md" style="margin-bottom:32px;">Planifica tu jubilación y tu salud financiera a largo
+                        plazo, de manera independiente y educativa.</p>
+
+                    <div class="spotlight-bullets">
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);"><svg
+                                    class="ds-svg" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg></div>
+                            <div>
+                                <strong>Simulador de toda tu vida</strong>
+<span>Proyecta cómo crecerá tu dinero a lo largo de los años, desde hoy hasta mucho después de tu jubilación.</span>
+                            </div>
+                        </div>
+                        <div class="bullet-item">
+                            <div class="bullet-icon"
+                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);"><svg
+                                    class="ds-svg" viewBox="0 0 24 24">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                    <polyline points="17 11 19 13 23 9"></polyline>
+                                </svg></div>
+                            <div>
+                                <strong>Tus ingresos y crecimiento</strong>
+<span>Calcula tu crecimiento real a lo largo del tiempo, teniendo en cuenta la inflación y tus objetivos de ahorro.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI Panel: Simulator -->
+                <div class="ui-panel sim-panel reveal reveal-delay-2">
+                    <div
+                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
+                        MI FUTURO — PROYECCIÓN CICLO DE VIDA</div>
+
+                    <div class="sim-inputs">
+                        <div class="sim-input-row">
+                            <span class="sim-input-label">Patrimonio actual</span>
+                            <span class="sim-input-val">€285.400</span>
+                        </div>
+                        <div class="sim-input-row">
+                            <span class="sim-input-label">Ahorro anual</span>
+                            <span class="sim-input-val">€14.650</span>
+                        </div>
+                        <div class="sim-input-row">
+                            <span class="sim-input-label">Retorno esperado (7%)</span>
+                            <span class="sim-input-val">Neto de inflación</span>
+                        </div>
+                        <div class="sim-input-row">
+                            <span class="sim-input-label">Pensión pública (100%)</span>
+                            <span class="sim-input-val">€22.000/año</span>
+                        </div>
+                    </div>
+
+                    <div class="sim-result">
+                        <div class="sim-result-icon" style="background:var(--ds-emerald-500);"><svg class="ds-svg"
+                                viewBox="0 0 24 24">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg></div>
+                        <div>
+                            <div class="sim-result-label">INGRESOS NETOS ESTIMADOS EN 2038</div>
+                            <div class="sim-result-val">€ 4.050/mes</div>
+                            <div style="font-size:0.65rem;color:var(--text-tertiary);margin-top:2px;">Objetivo alcanzado
+                                · <strong style="color:#10b981;">Independencia Financiera</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="sim-chart">
+                        <div class="sim-chart-bar-wrap">
+                            <div class="sim-bar-row">
+                                <span class="sim-bar-year">2026</span>
+                                <div class="sim-bar-track">
+                                    <div class="sim-bar-fill"
+                                        style="width:31%;background:linear-gradient(90deg,#6366f1,#8b5cf6);"></div>
+                                </div>
+                                <span class="sim-bar-val">€285k</span>
+                            </div>
+                            <div class="sim-bar-row">
+                                <span class="sim-bar-year">2030</span>
+                                <div class="sim-bar-track">
+                                    <div class="sim-bar-fill"
+                                        style="width:55%;background:linear-gradient(90deg,#6366f1,#8b5cf6);"></div>
+                                </div>
+                                <span class="sim-bar-val">€510k</span>
+                            </div>
+                            <div class="sim-bar-row">
+                                <span class="sim-bar-year">2038</span>
+                                <div class="sim-bar-track">
+                                    <div class="sim-bar-fill"
+                                        style="width:100%;background:linear-gradient(90deg,#10b981,#34d399);"></div>
+                                </div>
+                                <span class="sim-bar-val" style="color:#10b981;">€924k ✓</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- ════════════════════════════════════════
      SPOTLIGHT 1: DASHBOARD
@@ -387,7 +717,8 @@
                     <div class="section-tag"><svg class="ds-svg" viewBox="0 0 24 24">
                             <path d="M18 20V10M12 20V4M6 20v-6"></path>
                         </svg> Mi Visión 360</div>
-                    <h2 class="display-md">Tu visión 360°,<br /><span class="gradient-text">en un instante.</span></h2>
+                    <h2 class="display-md">Tu resumen financiero,<br />
+<span class="gradient-text">de un solo vistazo.</span></h2>
                     <p class="body-md" style="margin-bottom:32px;">Sigue tu progreso financiero, define metas y toma
                         decisiones informadas con datos claros y objetivos.</p>
 
@@ -397,9 +728,8 @@
                                     <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                 </svg></div>
                             <div>
-                                <strong>Patrimonio Total e YTD</strong>
-                                <span>Monitoriza tu crecimiento total y el avance anual (Year-To-Date) actualizado al
-                                    minuto.</span>
+                                <strong>Todo lo que tienes y lo que has crecido este año</strong>
+<span>Observa cómo sube el valor total de tu dinero día a día, de forma actualizada.</span>
                             </div>
                         </div>
                         <div class="bullet-item">
@@ -407,9 +737,8 @@
                                     <path d="M12 20v-6M6 20v-3M18 20v-9"></path>
                                 </svg></div>
                             <div>
-                                <strong>Ingreso Pasivo Real</strong>
-                                <span>Desglose de rentas mensuales que generan tus activos de distribución (dividendos,
-                                    REITs, etc).</span>
+                                <strong>Dinero extra constante</strong>
+<span>Descubre cuánto dinero estás generando automáticamente mes a mes gracias a tus inversiones.</span>
                             </div>
                         </div>
                         <div class="bullet-item">
@@ -419,9 +748,8 @@
                                     <path d="M12 14L15.5 10.5"></path>
                                 </svg></div>
                             <div>
-                                <strong>Anillo de Jubilación</strong>
-                                <span>Visualiza cuánto de tu meta de gastos está cubierto por tus rentas actuales más tu
-                                    pensión futura.</span>
+                                <strong>Tu camino a la tranquilidad</strong>
+<span>Visualiza cuánto te falta para poder vivir de tus ahorros y tu futura pensión.</span>
                             </div>
                         </div>
                     </div>
@@ -516,453 +844,6 @@
 
 
     <!-- ════════════════════════════════════════
-     SPOTLIGHT 1.5: MI CARTERA
-  ════════════════════════════════════════ -->
-    <section id="cartera-spotlight" class="section spotlight" style="background:rgba(16,185,129,0.02)">
-        <div class="bg-glow glow-emerald"
-            style="width:600px;height:600px;top:50%;left:-100px;transform:translateY(-50%);opacity:0.3;"></div>
-        <div class="container">
-            <div class="spotlight-grid reverse">
-
-                <!-- UI Panel: Asset Allocation -->
-                <div class="ui-panel reveal reveal-delay-2">
-                    <div
-                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
-                        ASSET ALLOCATION</div>
-
-                    <div style="display:flex; justify-content:center; margin:20px 0;">
-                        <!-- Mock Donut Chart using SVG -->
-                        <svg viewBox="0 0 100 100" width="160" height="160">
-                            <!-- Background ring -->
-                            <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)"
-                                stroke-width="15" />
-                            <!-- Acciones (60%) -->
-                            <circle cx="50" cy="50" r="40" fill="none" stroke="#6366f1" stroke-width="15"
-                                stroke-dasharray="150.8 251.2" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
-                            <!-- ETFs (20%) -->
-                            <circle cx="50" cy="50" r="40" fill="none" stroke="#8b5cf6" stroke-width="15"
-                                stroke-dasharray="50.24 251.2" stroke-dashoffset="-150.8"
-                                transform="rotate(-90 50 50)" />
-                            <!-- Efectivo (10%) -->
-                            <circle cx="50" cy="50" r="40" fill="none" stroke="#10b981" stroke-width="15"
-                                stroke-dasharray="25.12 251.2" stroke-dashoffset="-201.04"
-                                transform="rotate(-90 50 50)" />
-                            <!-- Crypto (10%) -->
-                            <circle cx="50" cy="50" r="40" fill="none" stroke="#f59e0b" stroke-width="15"
-                                stroke-dasharray="25.12 251.2" stroke-dashoffset="-226.16"
-                                transform="rotate(-90 50 50)" />
-                        </svg>
-                    </div>
-
-                    <div class="ret-items" style="margin-top:24px;">
-                        <div class="ret-item">
-                            <div class="ret-item-label"><span class="ret-item-dot"
-                                    style="background:#6366f1;"></span>Acciones Totales</div>
-                            <div class="ret-item-val" style="color:var(--text-primary);">60.0%</div>
-                        </div>
-                        <div class="ret-item">
-                            <div class="ret-item-label"><span class="ret-item-dot"
-                                    style="background:#8b5cf6;"></span>ETFs (Indexados)</div>
-                            <div class="ret-item-val" style="color:var(--text-primary);">20.0%</div>
-                        </div>
-                        <div class="ret-item">
-                            <div class="ret-item-label"><span class="ret-item-dot"
-                                    style="background:#10b981;"></span>Efectivo & Renta Fija</div>
-                            <div class="ret-item-val" style="color:var(--text-primary);">10.0%</div>
-                        </div>
-                        <div class="ret-item">
-                            <div class="ret-item-label"><span class="ret-item-dot"
-                                    style="background:#f59e0b;"></span>Criptomonedas</div>
-                            <div class="ret-item-val" style="color:var(--text-primary);">10.0%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Text -->
-                <div class="spotlight-text reveal">
-                    <div class="section-tag"><svg class="ds-svg" viewBox="0 0 24 24">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg> Mi Cartera</div>
-                    <h2 class="display-md">Diversificación inteligente.<br /><span class="gradient-text">Control
-                            absoluto.</span></h2>
-                    <p class="body-md" style="margin-bottom:32px;">Controla tu cartera y aprende cómo equilibrarla según
-                        tu perfil de riesgo, sin recomendaciones de fondos concretos.</p>
-
-                    <div class="spotlight-bullets">
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);">
-                                <svg class="ds-svg" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                                    </path>
-                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                                </svg>
-                            </div>
-                            <div>
-                                <strong>Asset Allocation Detallado</strong>
-                                <span>Desglosa tus inversiones por clase de activo: Acciones, ETFs, REITs, Bonos y
-                                    Crypto de un solo vistazo.</span>
-                            </div>
-                        </div>
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);">
-                                <svg class="ds-svg" viewBox="0 0 24 24">
-                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                                </svg>
-                            </div>
-                            <div>
-                                <strong>Top Movers y Rentabilidad</strong>
-                                <span>Detecta rápidamente qué activos están impulsando tu rentabilidad y analiza las
-                                    desviaciones.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ════════════════════════════════════════
-     SPOTLIGHT 2: AI ADVISOR
-  ════════════════════════════════════════ -->
-    <section id="ai-advisor" class="section spotlight" style="background:rgba(139,92,246,0.02);">
-        <div class="bg-glow glow-violet"
-            style="width:600px;height:600px;top:50%;right:-150px;transform:translateY(-50%);opacity:0.4;"></div>
-        <div class="container">
-            <div class="spotlight-grid reverse">
-                <!-- UI Panel: AI Chat -->
-                <div class="ui-panel ai-panel reveal">
-                    <div class="ai-header">
-                        <div class="ai-avatar"><svg class="ds-svg" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles">
-                                <path
-                                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                                <path d="M5 3v4" />
-                                <path d="M19 17v4" />
-                                <path d="M3 5h4" />
-                                <path d="M17 19h4" />
-                            </svg></div>
-                        <div class="ai-header-text">
-                            <h4>Mi Asesor — Gemini</h4>
-                            <p>Análisis patrimonial mediante modelos técnicos</p>
-                        </div>
-                        <span
-                            style="font-size:0.65rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);border-radius:100px;padding:3px 10px;color:#10b981;margin-left:auto;">●
-                            Online</span>
-                    </div>
-
-                    <div class="ai-messages">
-                        <div class="ai-msg assistant">
-                            <div class="ai-bubble">Hola, soy Gemini. Tengo acceso completo a tu cartera y objetivos. ¿En
-                                qué puedo ayudarte hoy?</div>
-                        </div>
-                        <div class="ai-msg user">
-                            <div class="ai-bubble">¿Llegaré a mi meta de jubilación en 2038?</div>
-                        </div>
-                        <div class="ai-msg assistant">
-                            <div class="ai-bubble">
-                                Analizando tu cartera de €285.400 y tu ahorro mensual de €1.000... <strong>Sí, llegarás
-                                    con margen.</strong> Estás al 68% de cobertura. Si mantienes el yield del 5.19%,
-                                incluso podrías alcanzar la meta en 2036.
-                            </div>
-                        </div>
-                        <div class="ai-msg user">
-                            <div class="ai-bubble">¿Qué hago con mi exceso de liquidez?</div>
-                        </div>
-                        <div class="ai-msg assistant">
-                            <div class="ai-bubble">
-                                Según un modelo teórico de diversificación, tendrías un déficit del 8% en <strong>ETFs
-                                    de acumulación</strong>. Podrías considerar reforzar el MSCI World o S&P 500.
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        style="font-size: 0.55rem; color: #6e6e73; padding: 10px 15px; opacity: 0.8; line-height: 1.2;">
-                        * Este análisis se basa en modelos matemáticos y proyecciones teóricas. No constituye
-                        asesoramiento financiero ni recomendaciones personalizadas.
-                    </div>
-
-                    <div class="ai-input-bar">
-                        <span class="ai-input-text">Pregunta a Gemini sobre tu cartera...</span>
-                        <div class="ai-send-btn">↑</div>
-                    </div>
-                </div>
-
-                <!-- Text -->
-                <div class="spotlight-text reveal reveal-delay-2">
-                    <div class="section-tag">✦ Mi Asesor</div>
-                    <h2 class="display-md">Tu inteligencia financiera<br /><span class="gradient-text">24/7
-                            disponible.</span></h2>
-                    <p class="body-md" style="margin-bottom:32px;">Educación financiera práctica para que tomes
-                        decisiones con autonomía, lejos de bancos y comisiones innecesarias.</p>
-
-                    <div class="spotlight-bullets">
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(139,92,246,0.15);border-color:rgba(139,92,246,0.2);"><svg
-                                    class="ds-svg" viewBox="0 0 24 24">
-                                    <polyline points="3 6 5 6 21 6"></polyline>
-                                    <path
-                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                    </path>
-                                </svg></div>
-                            <div>
-                                <strong>Contexto patrimonial absoluto</strong>
-                                <span>Sabe cuánto valen tus activos, qué rendimiento dan y qué impuestos pagarás al
-                                    retirarlos.</span>
-                            </div>
-                        </div>
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(139,92,246,0.15);border-color:rgba(139,92,246,0.2);"><svg
-                                    class="ds-svg" viewBox="0 0 24 24">
-                                    <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
-                                    <path d="M12 2a10 10 0 0 1 10 10h-10V2z"></path>
-                                </svg></div>
-                            <div>
-                                <strong>Streaming en tiempo real</strong>
-                                <span>Obtén respuestas fluidas e instantáneas gracias a la potencia de Gemini integrada
-                                    en la app.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ════════════════════════════════════════
-     SPOTLIGHT 3: MI FUTURO
-  ════════════════════════════════════════ -->
-    <section id="simulator" class="section spotlight">
-        <div class="bg-glow glow-emerald"
-            style="width:500px;height:500px;top:50%;left:-100px;transform:translateY(-50%);opacity:0.4;"></div>
-        <div class="container">
-            <div class="spotlight-grid">
-                <!-- Text -->
-                <div class="spotlight-text reveal">
-                    <div class="section-tag"><svg class="ds-svg" viewBox="0 0 24 24">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg> Mi Futuro</div>
-                    <h2 class="display-md">Ciclo de vida completo.<br /><span class="gradient-text">Planifica tu
-                            libertad.</span></h2>
-                    <p class="body-md" style="margin-bottom:32px;">Planifica tu jubilación y tu salud financiera a largo
-                        plazo, de manera independiente y educativa.</p>
-
-                    <div class="spotlight-bullets">
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);"><svg
-                                    class="ds-svg" viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 6 12 12 16 14"></polyline>
-                                </svg></div>
-                            <div>
-                                <strong>Modo Ciclo de Vida</strong>
-                                <span>Simulación de 40+ años cubriendo la fase de acumulación y la fase de jubilación de
-                                    rentas.</span>
-                            </div>
-                        </div>
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.2);"><svg
-                                    class="ds-svg" viewBox="0 0 24 24">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="8.5" cy="7" r="4"></circle>
-                                    <polyline points="17 11 19 13 23 9"></polyline>
-                                </svg></div>
-                            <div>
-                                <strong>LTIP e IRPF marginal</strong>
-                                <span>Cálculo preciso del neto real de tus bonus plurianuales y el impacto fiscal en tus
-                                    plusvalías.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UI Panel: Simulator -->
-                <div class="ui-panel sim-panel reveal reveal-delay-2">
-                    <div
-                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
-                        MI FUTURO — PROYECCIÓN CICLO DE VIDA</div>
-
-                    <div class="sim-inputs">
-                        <div class="sim-input-row">
-                            <span class="sim-input-label">Patrimonio actual</span>
-                            <span class="sim-input-val">€285.400</span>
-                        </div>
-                        <div class="sim-input-row">
-                            <span class="sim-input-label">Ahorro + LTIP anual</span>
-                            <span class="sim-input-val">€14.650</span>
-                        </div>
-                        <div class="sim-input-row">
-                            <span class="sim-input-label">Retorno esperado (7%)</span>
-                            <span class="sim-input-val">Neto de inflación</span>
-                        </div>
-                        <div class="sim-input-row">
-                            <span class="sim-input-label">Pensión pública (100%)</span>
-                            <span class="sim-input-val">€22.000/año</span>
-                        </div>
-                    </div>
-
-                    <div class="sim-result">
-                        <div class="sim-result-icon" style="background:var(--ds-emerald-500);"><svg class="ds-svg"
-                                viewBox="0 0 24 24">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                            </svg></div>
-                        <div>
-                            <div class="sim-result-label">INGRESOS NETOS ESTIMADOS EN 2038</div>
-                            <div class="sim-result-val">€ 4.050/mes</div>
-                            <div style="font-size:0.65rem;color:var(--text-tertiary);margin-top:2px;">Objetivo alcanzado
-                                · <strong style="color:#10b981;">Independencia Financiera</strong></div>
-                        </div>
-                    </div>
-
-                    <div class="sim-chart">
-                        <div class="sim-chart-bar-wrap">
-                            <div class="sim-bar-row">
-                                <span class="sim-bar-year">2026</span>
-                                <div class="sim-bar-track">
-                                    <div class="sim-bar-fill"
-                                        style="width:31%;background:linear-gradient(90deg,#6366f1,#8b5cf6);"></div>
-                                </div>
-                                <span class="sim-bar-val">€285k</span>
-                            </div>
-                            <div class="sim-bar-row">
-                                <span class="sim-bar-year">2030</span>
-                                <div class="sim-bar-track">
-                                    <div class="sim-bar-fill"
-                                        style="width:55%;background:linear-gradient(90deg,#6366f1,#8b5cf6);"></div>
-                                </div>
-                                <span class="sim-bar-val">€510k</span>
-                            </div>
-                            <div class="sim-bar-row">
-                                <span class="sim-bar-year">2038</span>
-                                <div class="sim-bar-track">
-                                    <div class="sim-bar-fill"
-                                        style="width:100%;background:linear-gradient(90deg,#10b981,#34d399);"></div>
-                                </div>
-                                <span class="sim-bar-val" style="color:#10b981;">€924k ✓</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════
-     SPOTLIGHT 4: MI PROGRESO
-  ════════════════════════════════════════ -->
-    <section id="progreso-spotlight" class="section spotlight" style="background:rgba(245,158,11,0.02)">
-        <div class="bg-glow glow-amber"
-            style="width:500px;height:500px;top:50%;right:-100px;transform:translateY(-50%);opacity:0.3;"></div>
-        <div class="container">
-            <div class="spotlight-grid">
-
-                <!-- Text -->
-                <div class="spotlight-text reveal">
-                    <div class="section-tag"
-                        style="color:#f59e0b; border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.1);">
-                        <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
-                            <path d="M12 14v4"></path>
-                            <path d="M12 2A10 10 0 0 1 22 12A10 10 0 0 1 2 12A10 10 0 0 1 12 2Z"></path>
-                            <path d="M12 14L15.5 10.5"></path>
-                        </svg> Mi Progreso
-                    </div>
-                    <h2 class="display-md">Tus metas, cumplidas.<br /><span
-                            style="background:linear-gradient(90deg,#f59e0b,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Sin
-                            excusas.</span></h2>
-                    <p class="body-md" style="margin-bottom:32px;">Control de ahorro anual. KPIs de Crecimiento del Año,
-                        Media Mensual y Desviación respecto a tu objetivo configurado.</p>
-
-                    <div class="spotlight-bullets">
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
-                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
-                                    <path d="M3 3v18h18"></path>
-                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <strong>Control de Ahorro YTD</strong>
-                                <span>Compara tu ahorro acumulado del año actual (Year-To-Date) con la meta ambiciosa
-                                    que te fijaste.</span>
-                            </div>
-                        </div>
-                        <div class="bullet-item">
-                            <div class="bullet-icon"
-                                style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.2);">
-                                <svg class="ds-svg" viewBox="0 0 24 24" style="color:#f59e0b;">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 6 12 12 16 14"></polyline>
-                                </svg>
-                            </div>
-                            <div>
-                                <strong>Media Mensual y Desviaciones</strong>
-                                <span>Observa la media mensual de crecimiento y corrige desviaciones a tiempo para
-                                    asegurar tu éxito a final de año.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UI Panel: Progress KPI -->
-                <div class="ui-panel reveal reveal-delay-2" style="border-top:4px solid #f59e0b;">
-                    <div
-                        style="font-size:0.65rem;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">
-                        OBJETIVO DE AHORRO 2026</div>
-
-                    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:12px;">
-                        <div>
-                            <div
-                                style="font-size:2rem; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em;">
-                                €9.000</div>
-                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Ahorro YTD Acumulado</div>
-                        </div>
-                        <div style="text-align:right;">
-                            <div style="font-size:1.1rem; font-weight:600; color:var(--text-secondary);">€12.000</div>
-                            <div style="font-size:0.85rem; color:var(--text-tertiary);">Meta Anual</div>
-                        </div>
-                    </div>
-
-                    <div class="ret-goal-bar" style="height:12px; margin-bottom:24px;">
-                        <div class="ret-goal-fill"
-                            style="width:75%; background:linear-gradient(90deg,#f59e0b,#fbbf24);"></div>
-                    </div>
-
-                    <div class="ret-items">
-                        <div class="ret-item"
-                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
-                            <div class="ret-item-label" style="font-size:0.75rem;">Progreso Total</div>
-                            <div class="ret-item-val" style="color:#f59e0b; font-size:1.2rem; font-weight:700;">75.0%
-                            </div>
-                        </div>
-                        <div class="ret-item"
-                            style="background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; border:1px solid var(--border);">
-                            <div class="ret-item-label" style="font-size:0.75rem;">Media Mensual</div>
-                            <div class="ret-item-val"
-                                style="color:var(--text-primary); font-size:1.2rem; font-weight:700;">€1.125</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ════════════════════════════════════════
      STATS
   ════════════════════════════════════════ -->
     <section id="stats" class="section-sm">
@@ -987,6 +868,110 @@
             </div>
         </div>
     </section>
+
+
+    <!-- ════════════════════════════════════════
+     FEATURES GRID
+  ════════════════════════════════════════ -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="features-intro reveal">
+                <div class="section-tag">✦ Funcionalidades</div>
+                <h2 class="display-lg">Seis módulos.<br /><span class="gradient-text">Un solo objetivo
+                        financiero.</span></h2>
+                <p class="body-lg" style="margin-top:16px;">Desde el seguimiento diario de rentas pasivas hasta la
+                    planificación de tu jubilación
+                    de forma sencilla — Kannut lo cubre todo.</p>
+            </div>
+
+
+            <div class="ds-feature-grid">
+                <div id="vision360" class="ds-card ds-card-highlight">
+                    <div class="ds-icon-box" style="background:#5559E8;">
+                        <svg class="ds-svg" viewBox="0 0 24 24">
+                            <path d="M18 20V10M12 20V4M6 20v-6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="ds-card-title">Mi Visión 360</h3>
+                    <p class="ds-card-desc">Tu resumen financiero. Sigue tu progreso, define metas y toma decisiones informadas con datos claros.</p>
+                    <span class="ds-card-tags">RESUMEN · METAS · RENTAS</span>
+                </div>
+
+                <div id="cartera" class="ds-card">
+                    <div class="ds-icon-box" style="background:var(--ds-emerald-500);">
+                        <svg class="ds-svg" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="ds-card-title">Mi Cartera</h3>
+                    <p class="ds-card-desc">Tus inversiones organizadas. Aprende a equilibrarlas según tu perfil de riesgo de forma sencilla.</p>
+                    <span class="ds-card-tags">ACCIONES · FONDOS · CRIPTO</span>
+                </div>
+
+                <div id="asesor" class="ds-card">
+                    <div class="ds-icon-box" style="background:var(--ds-violet-500);">
+                        <svg class="ds-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles">
+                            <path
+                                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                            <path d="M5 3v4" />
+                            <path d="M19 17v4" />
+                            <path d="M3 5h4" />
+                            <path d="M17 19h4" />
+                        </svg>
+                    </div>
+                    <h3 class="ds-card-title">Mi Asesor Personal</h3>
+                    <p class="ds-card-desc">Educación financiera práctica para que tomes decisiones con autonomía, lejos
+                        de bancos y comisiones innecesarias.</p>
+                    <span class="ds-card-tags">GEMINI · STREAMING · 24/7</span>
+                </div>
+
+                <div id="futuro" class="ds-card">
+                    <div class="ds-icon-box" style="background:var(--ds-sky-500);">
+                        <svg class="ds-svg" viewBox="0 0 24 24">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="ds-card-title">Mi Futuro</h3>
+                    <p class="ds-card-desc">Proyecta tu futuro y tu salud financiera a largo plazo, de manera independiente y realista.</p>
+                    <span class="ds-card-tags">PROYECCIONES · SIMULADOR · PENSIÓN</span>
+                </div>
+
+                <div id="progreso" class="ds-card">
+                    <div class="ds-icon-box" style="background:var(--ds-amber-500);">
+                        <svg class="ds-svg" viewBox="0 0 24 24">
+                            <path d="M12 14v4"></path>
+                            <path d="M12 2A10 10 0 0 1 22 12A10 10 0 0 1 2 12A10 10 0 0 1 12 2Z"></path>
+                            <path d="M12 14L15.5 10.5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="ds-card-title">Mi Progreso</h3>
+                    <p class="ds-card-desc">Control de ahorro anual. KPIs de Crecimiento del Año, Media Mensual y
+                        Desviación respecto a tu objetivo configurado.</p>
+                    <span class="ds-card-tags">METAS · AHORRO · CRECIMIENTO</span>
+                </div>
+
+                <div id="configuracion" class="ds-card">
+                    <div class="ds-icon-box" style="background:var(--ds-rose-500);">
+                        <svg class="ds-svg" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="ds-card-title">Mi Configuración</h3>
+                    <p class="ds-card-desc">Personaliza tu perfil: año de nacimiento, objetivo económico y pensión estimada. Nosotros hacemos las matemáticas para darte los datos exactos que necesitas.</p>
+                    <span class="ds-card-tags">PERFIL · FINANZAS · OBJETIVOS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- ════════════════════════════════════════
