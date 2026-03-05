@@ -20,8 +20,18 @@ window.addEventListener('scroll', () => {
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
+// Keep --nav-height CSS var in sync so the mobile menu always
+// opens right below the navbar, even after scroll or resize.
+function updateNavHeight() {
+    const h = navbar ? navbar.getBoundingClientRect().height : 64;
+    document.documentElement.style.setProperty('--nav-height', h + 'px');
+}
+updateNavHeight();
+window.addEventListener('resize', updateNavHeight, { passive: true });
+
 if (mobileNavToggle) {
     mobileNavToggle.addEventListener('click', () => {
+        updateNavHeight(); // recalculate at moment of opening
         document.body.classList.toggle('nav-open');
         const isOpen = document.body.classList.contains('nav-open');
         mobileNavToggle.setAttribute('aria-expanded', isOpen);
