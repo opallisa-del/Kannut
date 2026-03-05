@@ -1539,7 +1539,7 @@ footer {
   .nav-links {
     display: flex;
     position: fixed;
-    top: 64px;
+    top: var(--nav-height, 64px);
     left: 0;
     right: 0;
     bottom: 0;
