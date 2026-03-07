@@ -1975,10 +1975,32 @@ footer {
 
 @media (max-width: 768px) {
   .pricing-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin: 0 -24px;
+    padding: 24px 24px 24px 24px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .pricing-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .pricing-card {
+    flex: 0 0 85%;
+    max-width: 85%;
+    scroll-snap-align: center;
     padding: 32px 24px;
+  }
+
+  .pricing-card.featured {
+    order: 0;
   }
 }
